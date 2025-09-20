@@ -26,7 +26,6 @@ Execute Django admin and create details for 10 books
 ```
 admin.py
 
-
 from django.contrib import admin
 from . models import car
 
@@ -35,8 +34,8 @@ admin.site.register(car)
 class arAdmin(admin.ModelAdmin):
     list_display = ('id','brand','model','year','price')
 ```
+```
 models.py
-
 
 from django.db import models
 
@@ -48,6 +47,7 @@ class car(models.Model):
     year = models.DateField()
     price = models.IntegerField()
 ```
+
 ## OUTPUT
 
 Include the screenshot of your admin page.
